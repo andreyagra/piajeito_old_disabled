@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  database: piajeito_dev
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password: root
+  server: localhost
+
+test:
+    adapter: postgresql
+    database: piajeito_dev
+    pool: 5
+    timeout: 5000
+    username: postgres
+    password: root
+    server: localhost
+
+production:
+    adapter: postgresql
+    database: piajeito
+    pool: 5
+    timeout: 5000
+    username: postgres
+    password: root
+    server: localhost
