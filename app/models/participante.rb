@@ -1,3 +1,3 @@
 class Participante < ActiveRecord::Base
-  validates_presence_of :nome, :apelido
+  validates :nome, :apelido, :presence => true
 end
