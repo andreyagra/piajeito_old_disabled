@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Placar do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "Testes Basicos" do
+    specify {subject.should_not be_valid}
+    
+  end  
 end

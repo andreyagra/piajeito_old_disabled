@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111027204216) do
+ActiveRecord::Schema.define(:version => 20111202215900) do
 
   create_table "participantes", :force => true do |t|
     t.string   "nome"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20111027204216) do
     t.string   "observacao"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "pontos"
   end
 
   add_index "placares", ["participante_id"], :name => "index_placares_on_participante_id"
@@ -43,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20111027204216) do
   create_table "premios", :force => true do |t|
     t.string   "descricao"
     t.integer  "pontos"
-    t.string   "observaocao"
+    t.string   "observacao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
